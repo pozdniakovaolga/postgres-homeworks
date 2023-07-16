@@ -11,7 +11,7 @@ path_to_customers = os.path.join(path_to_hw1, "customers_data.csv")
 path_to_orders = os.path.join(path_to_hw1, "orders_data.csv")
 
 # Подключаемся к базе данных
-conn = psycopg2.connect(host='localhost', database=os.getenv('DATABASE'), user='postgres', password=os.getenv('DB_PSW'))
+conn = psycopg2.connect(host='localhost', database='north', user='postgres', password=os.getenv('DB_PSW'))
 
 # Заполняем таблицы данными из north_data
 try:
